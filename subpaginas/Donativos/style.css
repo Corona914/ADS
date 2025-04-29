@@ -1,0 +1,929 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Rubik Spray Paint', cursive;
+  color: #F4A261;
+}
+
+/*.color1 {color: #1b0f06;}
+.color2 {color: #7f7971;}
+.color3 {color: #ff5ab0;}
+.color4 {color: #ffb9f4;}
+.color5 {color: #ffe4f4;}*/
+
+.seccion-oscura {
+  color: white;
+  background-color: #A67B5B;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #ECDFCD;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Spray Paint', cursive;
+  color: #F4A261;
+}
+
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  color: white;
+  background-color: #a6a6a6;
+  border: 20px solid #a6a6a6;
+}
+
+.btn-info:hover {
+  font-size: 1.1rem;
+  margin: 20px;
+  color: white;
+  background-color: #a6a6a6;
+  border: 20px solid #a6a6a6;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+  background-image: url('imagenes/fotoDonativos.png');
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+
+/*Seccion Donar*/
+.donar-seccion {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.titulo-donar {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.contenedor-donar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.donar-cuenta, .donar-otros {
+  border-radius: 30px;
+  padding: 30px;
+  width: 350px;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+}
+
+
+
+.donar-cuenta {
+  background-color: #F6A86E;
+  color: white;
+}
+
+.donar-cuenta h3, .donar-otros h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.donar-cuenta .banco {
+  font-weight: bold;
+}
+
+.resaltado {
+  font-weight: bold;
+}
+
+.donar-otros {
+  background-color: #9CAF88;
+  color: white;
+}
+
+
+.donar-otros ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.donar-otros li {
+  margin-bottom: 10px;
+}
+
+.donar-otros .ingles {
+  font-style: italic;
+}
+
+.donar-otros p {
+  margin-top: 20px;
+  font-family: 'Rubik Spray Paint', cursive;
+}
+
+.donar-cuenta h4, .donar-otros h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+.donar-cuenta p {
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+/*Animales ayudados*/
+.animales-ayudados {
+
+  font-family: 'Quicksand', sans-serif;
+  padding: 80px 0;
+  background-image: url('imagenes/huellitas-fondo.png'); /* opcional */
+  background-size: contain;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.animales-ayudados h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.animales-ayudados h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #F4A261;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.animales-ayudados .contador {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.animales-ayudados .subtexto {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.botones-acciones .btn {
+  min-width: 120px;
+  margin: 5px;
+}
+
+.btn-donar {
+  background-color: #F4A261;
+  color: white;
+  border: none;
+}
+
+.btn-donar:hover {
+  background-color: #F4A261;
+  color: white;
+}
+
+.btn-adoptar {
+  background-color: #7b994f;
+  color: white;
+  border: none;
+}
+
+.btn-adoptar:hover {
+  background-color: #6d8c45;
+  color: white;
+}
+/* Imágenes */
+.imagen-cuenta, .imagen-otros {
+  margin-top: 20px;
+  width: 150px; /* <-- antes estaba en 100px */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: rgb(251, 198, 247);
+  background-color:#0a0a23;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #ee72b2;
+  background-color: #747873;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+  background-color: #a6a6a6;
+}
+
+/*Titulo*/
+:root {
+	--logotipo:   #9daf7d;
+	--profesion: #f2f2f2;
+	--primario: #7b994f;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+
+.logotipo {
+	padding: 10px;
+	color: var(--logotipo);
+}
+
+.logotipo .subtitulo {
+	text-align: center;
+	color: var(--profesion);
+	background: var(--logotipo);
+	padding: 12px 20px;
+	transition: .5s ease all;
+	font-size: 36px;
+  font-weight: bold;
+	font-family: 'Quicksand', monospace;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logotipo:hover .subtitulo {
+	background: var(--primario);
+}
+
+.texto-animado {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.texto-animado > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+
+.texto-animado > div.animacion {
+	transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+	font-size: 100px;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 100px;
+}
+
+@media screen and (max-width: 600px){
+	.texto-animado > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.texto-animado .segunda-linea {
+		top: 50px;
+	}
+
+	.texto-animado > div.animacion {
+		transform: translateY(-50px);
+	}
+
+	.logotipo .subtitulo {
+		font-size: 20px;
+	}
+}
+
+/* Articulos */
+
+.articulos {
+  min-height: 500px;
+  padding: 30px;
+
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 3px 3px 10px rgba(157, 175, 125);
+  border: 2px solid #9daf7d;
+  border-bottom: 1px solid #9daf7d;
+ 
+}
+
+.articulos .card-header {
+  font-weight: bold;
+}
+
+.list-group-item {
+  border-top: 0.5px solid #9daf7d;
+  border-bottom: 0.5px solid #9daf7d;
+    
+}
+
+
+/* Historias */
+
+.historia {
+  padding: 40px 40px 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.historia .carousel {
+  max-width: 800px;
+  width: 100%;
+}
+
+.carousel-item {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.historia-imagen {
+  width: 100%; /* La imagen ocupará todo el ancho disponible */
+  max-width: 350px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  margin: 10px 0 20px 0;
+  object-fit: contain; /* Asegura que la imagen se vea completa */
+}
+
+
+.historia-texto {
+  max-width: 80%;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Quicksand', monospace;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+      width: 400px; /* Reducir ligeramente en pantallas pequeñas */
+  }
+
+  .carousel-text {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel img {
+      width: 350px; /* Mantener una imagen visible pero no demasiado pequeña */
+      height: auto; /* Mantiene la proporción original */
+      object-fit: cover;
+  }
+
+  .carousel-text {
+      font-size: 5px;
+  }
+}
+
+.historia-info {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.historia-info p {
+  margin-bottom: 0;
+}
+
+.historia-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.historia-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Contacto */
+
+.contacto {
+  padding: 50px 20px;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.contacto h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #9daf7d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-info a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid #9daf7d; /* Contorno verde */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.contact-info i {
+  color: #9daf7d; /* El icono está vacío por defecto */
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.contact-info a:hover {
+  background-color: #9daf7d; /* Fondo verde al pasar el cursor */
+}
+
+.contact-info a:hover i {
+  color: white; /* Rellenar el icono de verde al pasar el cursor */
+}
+
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 12px;
+  color: #fce9f4;
+  padding: 20px;
+}
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .historia-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .historia-texto {
+    font-size: 18px;
+    
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+/* Sección Donar */
+.donar {
+  padding: 60px 10%;
+
+}
+
+.donar-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido */
+  flex-wrap: wrap;
+  text-align: center; /* Centra el texto */
+}
+
+.donar-texto {
+  flex: 1;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.donar-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center; /* Centra el título */
+}
+
+.donar-texto p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; /* Justifica el texto */
+}
+
+.donar-imagen {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.donar-imagen img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+}
+
+.boton {
+  background-color: orange;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block; /* Hace que el botón ocupe todo el ancho */
+  margin: 20px auto; /* Centra el botón */
+}
+
+.boton:hover {
+  background-color: darkorange;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .donar-contenedor {
+      flex-direction: column;
+  }
+}
+
+
+/*Porque Adoptar*/
+.porqueadopcion {
+  padding: 60px 10%;
+ 
+}
+
+.porqueadopcion-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.porqueadopcion-texto {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+ 
+}
+
+.porqueadopcion-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.porqueadopcion-texto p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify; 
+}
+
+.porqueadopcion-texto ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify; 
+}
+
+.porqueadopcion-texto ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify; 
+}
+
+.porqueadopcion-imagen {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.porqueadopcion-imagen img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.boton {
+  background-color: #9daf7d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.boton:hover {
+  background-color: #9daf7d;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .porqueadopcion-contenedor {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .porqueadopcion-imagen {
+      margin-top: 20px;
+  }
+}
+
+/*Preguntas Frecuentes*/
+
+.faq-container {
+  display: grid;
+  gap: 15px;
+}
+
+.faq-item {
+  border: 1px solid  #9daf7d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color:  #9daf7d;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
